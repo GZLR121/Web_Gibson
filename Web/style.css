@@ -1,72 +1,208 @@
-* {
-  margin: 0;
-}
-
-header {
-  display: flex;
-  background-color: #000;
-  padding: 20px 0;
-  align-content: center;
-  align-items: center;
-}
-
-nav {
-  max-width: 1000px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
   margin: 0;
   padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
-
-nav li {
-  display: inline-block;
-  margin-right: 20px;
+body{
+  background: #f2f2f2;
+  width: 100%;
 }
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  transition: .4s ease;
+nav{
+  background: #1b1b1b;
 }
-
-nav a:hover {
-  color: #e4c200f8;
+nav:after{
+  content: '';
+  clear: both;
+  display: table;
 }
-
-.dropdown {
+nav .logo{
+  float: left;
+  color: white;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 70px;
+  padding-left: 60px;
+}
+nav ul{
+  float: right;
+  margin-right: 40px;
+  list-style: none;
   position: relative;
-  transition: .6s ease;
-  
 }
-
-.dropdown-content {
-  display: none;
+nav ul li{
+  display: inline-block;
+  background: #1b1b1b;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  line-height: 70px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 15px;
+  transition: .3s ease;
+}
+nav ul li a:hover{
+  color: #e4c200f8;
+  border-radius: 5px;
+  box-shadow:  0 0 5px #fadd36f8,
+               0 0 10px #fae25bf8;
+}
+nav ul ul li a:hover{
+  box-shadow: none;
+}
+nav ul ul{
   position: absolute;
-  background-color: #000;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  top: 90px;
+  border-top: 3px solid #e4c200f8;
+  opacity: 0;
+  visibility: hidden;
+  transition: top .5s;
 }
-
-.dropdown-content ul{
-  transition: .6s ease;
-}
-
-.dropdown-content li {
-  padding: 12px 16px;
+nav ul ul ul{
+  border-top: none;
   
 }
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+nav ul ul li{
+  position: relative;
+  margin: 0px;
+  width: 150px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+nav ul ul li a{
+  line-height: 50px;
+}
+nav ul ul ul li{
+  position: relative;
+  top: -60px;
+  left: 150px;
+}
+.icon,input{
+  display: none;
+}
+.fa-plus{
+  font-size: 15px;
+  margin-left: 40px;
+}
 
-.dropdown:hover .dropdown-content {
-  display: block;
+.show {
+  display: none;
+}
+@media all and (max-width: 968px) {
+  nav ul{
+    margin-right: 0px;
+    float: left;
+  }
+  nav .logo{
+    padding-left: 30px;
+    width: 100%;
+  }
+  .show + a, ul{
+    display: none;
+  }
+  nav ul li,nav ul ul li{
+    display: block;
+    width: 100%;
+  }
+  nav ul li a:hover{
+    box-shadow: none;
+  }
+  .show{
+    display: flex;
+    color: white;
+    font-size: 18px;
+    padding: 0 20px;
+    line-height: 70px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .show:hover{
+    color: #e4c200f8;
+  }
+  .icon{
+    display: block;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    line-height: 70px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  nav ul ul{
+    top: 70px;
+    border-top: 0px;
+    float: none;
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  nav ul ul a{
+    padding-left: 40px;
+  }
+  nav ul ul ul a{
+    padding-left: 80px;
+  }
+  nav ul ul ul li{
+    position: static;
+  }
+  [id^=btn]:checked + ul{
+    display: block;
+  }
+  nav ul ul li{
+    border-bottom: 0px;
+  }
+  span.cancel:before{
+    content: '\f00d';
+  }
+}
+.content{
+  z-index: -1;
+  position: relative;
+  text-align: center;
+  
+}
+.navbarheader{
+  font-size: 35px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+.navbar p{
+  font-size: 30px;
+  font-weight: 500;
 }
 
 .logo img{
-  width: 70px;
-  margin-left: 15px;
+  width: 15vh;
+  margin-top: 2vh;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner_gibson{
+  display: flex;
+  height: auto; /* Ajusta la altura automáticamente */
+  background-position: center left; /* Posiciona la imagen en la esquina superior izquierda */
+  background-size: cover; /* Cubre el contenedor por completo */
+  margin-top: -10vh;
+}
+
+.txt {
+  position: absolute;
 }

@@ -1,32 +1,75 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menú desplegable</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h3 class="logo"><a href="/"><img src="images/logo.png" alt='logo'/></a></h3>
-    <nav class="nav">
-      <ul class="header-textos">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Acerca de</a></li>
-        <li class="dropdown">
-          <a href="#">Categorias</a>
-          <ul class="dropdown-content">
-            <li><a href="#">Guitarras</a></li>
-            <li><a href="#">Bajos</a></li>
-            <li><a href="#">Guitarras Acusticas</a></li>
-            <li><a href="#">Amplificadores</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+<html lang="en" dir="ltr">
 
-  <script src="script.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>Responsive Drop-down Menu Bar</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <!-- <link rel="stylesheet" href="file:///E:/fontawesome/css/all.css"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script src="file:///E:/jquery.js"></script> -->
+</head>
+
+<body>
+  <nav>
+
+    <div class="full-content">
+      <div class="navbar">
+        <div class="logo"><a href="/"><img src="images/logo2.png" alt='logo' /></a></div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li>
+            <label for="btn-1" class="show">Features +</label>
+            <a href="#">Features</a>
+            <input type="checkbox" id="btn-1">
+            <ul>
+              <li><a href="#">Pages</a></li>
+              <li><a href="#">Elements</a></li>
+              <li><a href="#">Icons</a></li>
+            </ul>
+          </li>
+          <li>
+            <label for="btn-2" class="show">Services +</label>
+            <a href="#">Services</a>
+            <input type="checkbox" id="btn-2">
+            <ul>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">App Design</a></li>
+              <li>
+                <label for="btn-3" class="show">More +</label>
+                <a href="#">More <span class="fa fa-plus"></span></a>
+                <input type="checkbox" id="btn-3">
+                <ul>
+                  <li><a href="#">Submenu-1</a></li>
+                  <li><a href="#">Submenu-2</a></li>
+                  <li><a href="#">Submenu-3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Log in</a></li>
+        </ul>
+  </nav>
+  </div>
+  <div class="content">
+    <div class="txt"><h2>¡Soy Gibson! Una leyenda en la música</h2>
+      <h3>Más de 130 años de pasión por la música</h3>     
+      <p>Desde mi nacimiento en 1894, he sido la voz de artistas icónicos y he impulsado la evolución de la 
+        música a través de mis instrumentos excepcionales. Soy Gibson, la marca de guitarras más legendaria del mundo.</p></div>
+      <div class="banner_gibson"><img src="images/Gibson_Big_Banner_Collection.jpg" alt=""></div>
+       
+  </div>
+
+
+  </div>
+  <!-- <script>
+    $('.icon').click(function () {
+      $('span').toggleClass("cancel");
+    });
+  </script> -->
+
 </body>
+
 </html>
