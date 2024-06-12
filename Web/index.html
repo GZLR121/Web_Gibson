@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Responsive Drop-down Menu Bar</title>
+  <title>Gibson</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <!-- <link rel="stylesheet" href="file:///E:/fontawesome/css/all.css"> -->
@@ -15,19 +15,19 @@
   <nav>
 
     <div class="full-content">
-      <div class="navbar">
+      <div id="nav" class="navbar">
         <div class="logo"><a href="/"><img src="images/logo2.png" alt='logo' /></a></div>
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="#Home">Home</a></li>
           <li>
             <label for="btn-1" class="show">Features +</label>
-            <a href="#">Features</a>
-            <input type="checkbox" id="btn-1">
+            <a href="#AcercaDe">Acerca De</a>
+            <!-- <input type="checkbox" id="btn-1">
             <ul>
               <li><a href="#">Pages</a></li>
               <li><a href="#">Elements</a></li>
               <li><a href="#">Icons</a></li>
-            </ul>
+            </ul> -->
           </li>
           <li>
             <label for="btn-2" class="show">Services +</label>
@@ -54,21 +54,33 @@
   </nav>
   </div>
   <div class="content">
-    <div class="txt"><h2>¡Soy Gibson! Una leyenda en la música</h2>
-      <h3>Más de 130 años de pasión por la música</h3>     
-      <p>Desde mi nacimiento en 1894, he sido la voz de artistas icónicos y he impulsado la evolución de la 
-        música a través de mis instrumentos excepcionales. Soy Gibson, la marca de guitarras más legendaria del mundo.</p></div>
-      <div class="banner_gibson"><img src="images/Gibson_Big_Banner_Collection.jpg" alt=""></div>
-       
-  </div>
+    <div class="banner_gibson" id="Home"><img src="images/Gibson_Big_Banner_Collection.jpg" alt="" /></div>
+    <br>
+    <div id="AcercaDe" class="Acercade">
+      <h1>ACERCA DE</h1>
+      <br>
+      <h2>¡Soy Gibson! Una leyenda en la música</h2><br>
+      <h3>Más de 130 años de pasión por la música</h3><br>
+      <p>Desde mi nacimiento en 1894, he sido la voz de artistas icónicos y he impulsado la evolución de la
+        música a través de mis instrumentos excepcionales. Soy Gibson, la marca de guitarras más legendaria del mundo.
+      </p><br>
+      <p>Mis guitarras han sido tocadas por leyendas como B.B. King, Eric Clapton, Jimmy Page, y Slash, y han sido
+        utilizadas para crear algunos de los momentos más memorables de la historia de la música.</p><br>
+      <img src="images/jimmy-page-eric-clapton.jpg" alt="" />
+      <br><p>Pero no solo soy una marca de guitarras. Soy una comunidad de músicos, artistas y amantes de la música
+        que comparten la pasión por el sonido y la creatividad.</p><br>
+        <img src="images/gibson-custom-shop.png" alt="" />  
+      <p>Ofrezco una amplia gama de guitarras para todos los niveles de experiencia, desde principiantes hasta
+        profesionales.</p>
+      <p>También tengo una amplia gama de accesorios, como amplificadores, pedales y estuches.</p>
+      <p>Si estás buscando una guitarra que te inspire a crear música increíble, Gibson es la marca para ti.</p>
+    </div>
 
-
+    <div id="Categorias" class="Categorias">
+      <h1>CATEGORIAS</h1>c
+    </div>
   </div>
-  <!-- <script>
-    $('.icon').click(function () {
-      $('span').toggleClass("cancel");
-    });
-  </script> -->
+  </div>
 
 </body>
 

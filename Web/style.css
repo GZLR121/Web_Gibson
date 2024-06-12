@@ -5,6 +5,7 @@
   user-select: none;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  
 }
 body{
   background: #f2f2f2;
@@ -12,6 +13,11 @@ body{
 }
 nav{
   background: #1b1b1b;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
 }
 nav:after{
   content: '';
@@ -167,12 +173,6 @@ nav ul ul ul li{
     content: '\f00d';
   }
 }
-.content{
-  z-index: -1;
-  position: relative;
-  text-align: center;
-  
-}
 .navbarheader{
   font-size: 35px;
   font-weight: 600;
@@ -197,12 +197,37 @@ nav ul ul ul li{
 
 .banner_gibson{
   display: flex;
-  height: auto; /* Ajusta la altura automáticamente */
-  background-position: center left; /* Posiciona la imagen en la esquina superior izquierda */
-  background-size: cover; /* Cubre el contenedor por completo */
-  margin-top: -10vh;
+  background-position: center left;
+  background-size: cover;
 }
 
-.txt {
-  position: absolute;
+.banner_gibson img {
+  max-width: 100%;
+  box-shadow: #1b1b1b 0px 0px 20px;
+}
+
+.content {
+  margin-top: 14vh;
+  margin-bottom:  10vh;
+}
+
+.Acercade {
+  margin-left: 35vh;
+  margin-right: 35vh;
+  text-align: center;
+}
+
+.Acercade img {
+  max-width: 50vh;
+}
+
+.Categorias {
+  margin-top: 50px;
+  margin-left: 35vh;
+  margin-right: 35vh;
+  text-align: center;
+}
+
+.Categorias img {
+  max-width: 50vh;
 }
