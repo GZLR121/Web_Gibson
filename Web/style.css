@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   user-select: none;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  
+
 }
-body{
+
+body {
   background: #f2f2f2;
   width: 100%;
 }
-nav{
+
+nav {
   background: #1b1b1b;
   position: fixed;
   top: 0;
@@ -19,12 +22,14 @@ nav{
   width: 100%;
   z-index: 10;
 }
-nav:after{
+
+nav:after {
   content: '';
   clear: both;
   display: table;
 }
-nav .logo{
+
+nav .logo {
   float: left;
   color: white;
   font-size: 27px;
@@ -32,19 +37,22 @@ nav .logo{
   line-height: 70px;
   padding-left: 60px;
 }
-nav ul{
+
+nav ul {
   float: right;
   margin-right: 40px;
   list-style: none;
   position: relative;
 }
-nav ul li{
+
+nav ul li {
   display: inline-block;
   background: #1b1b1b;
   margin: 0 5px;
   text-align: center;
 }
-nav ul li a{
+
+nav ul li a {
   color: white;
   line-height: 70px;
   text-decoration: none;
@@ -52,53 +60,64 @@ nav ul li a{
   padding: 8px 15px;
   transition: .3s ease;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
   color: #e4c200f8;
   border-radius: 5px;
-  box-shadow:  0 0 5px #fadd36f8,
-               0 0 10px #fae25bf8;
+  box-shadow: 0 0 5px #fadd36f8,
+    0 0 10px #fae25bf8;
 }
-nav ul ul li a:hover{
+
+nav ul ul li a:hover {
   box-shadow: none;
 }
-nav ul ul{
+
+nav ul ul {
   position: absolute;
   top: 90px;
   border-top: 3px solid #e4c200f8;
   opacity: 0;
   visibility: hidden;
-  transition: top .5s;
+  transition: top .8s;
 }
-.fa-solid:hover{
+
+.fa-solid:hover {
   color: #e4c200f8;
   transition: top .5s;
 }
-nav ul ul ul{
+
+nav ul ul ul {
   border-top: none;
-  
+
 }
-nav ul li:hover > ul{
+
+nav ul li:hover>ul {
   top: 70px;
   opacity: 1;
   visibility: visible;
 }
-nav ul ul li{
+
+nav ul ul li {
   position: relative;
   margin: 0px;
   width: 150px;
   float: none;
   display: list-item;
-  border-bottom: 1px solid rgba(0,0,0,0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
-nav ul ul li a{
+
+nav ul ul li a {
   line-height: 50px;
 }
-nav ul ul ul li{
+
+nav ul ul ul li {
   position: relative;
   top: -60px;
   left: 150px;
 }
-.icon,input{
+
+.icon,
+input {
   display: none;
 }
 
@@ -106,26 +125,34 @@ nav ul ul ul li{
 .show {
   display: none;
 }
+
 @media all and (max-width: 968px) {
-  nav ul{
+  nav ul {
     margin-right: 0px;
     float: left;
   }
-  nav .logo{
+
+  nav .logo {
     padding-left: 30px;
     width: 100%;
   }
-  .show + a, ul{
+
+  .show+a,
+  ul {
     display: none;
   }
-  nav ul li,nav ul ul li{
+
+  nav ul li,
+  nav ul ul li {
     display: block;
     width: 100%;
   }
-  nav ul li a:hover{
+
+  nav ul li a:hover {
     box-shadow: none;
   }
-  .show{
+
+  .show {
     display: flex;
     color: white;
     font-size: 18px;
@@ -134,10 +161,12 @@ nav ul ul ul li{
     cursor: pointer;
     text-align: center;
   }
-  .show:hover{
+
+  .show:hover {
     color: #e4c200f8;
   }
-  .icon{
+
+  .icon {
     display: block;
     color: white;
     position: absolute;
@@ -147,7 +176,8 @@ nav ul ul ul li{
     cursor: pointer;
     font-size: 25px;
   }
-  nav ul ul{
+
+  nav ul ul {
     top: 70px;
     border-top: 0px;
     float: none;
@@ -156,36 +186,44 @@ nav ul ul ul li{
     opacity: 1;
     visibility: visible;
   }
-  nav ul ul a{
+
+  nav ul ul a {
     padding-left: 40px;
   }
-  nav ul ul ul a{
+
+  nav ul ul ul a {
     padding-left: 80px;
   }
-  nav ul ul ul li{
+
+  nav ul ul ul li {
     position: static;
   }
-  [id^=btn]:checked + ul{
+
+  [id^=btn]:checked+ul {
     display: block;
   }
-  nav ul ul li{
+
+  nav ul ul li {
     border-bottom: 0px;
   }
-  span.cancel:before{
+
+  span.cancel:before {
     content: '\f00d';
   }
 }
-.navbarheader{
+
+.navbarheader {
   font-size: 35px;
   font-weight: 600;
   padding: 10px 0;
 }
-.navbar p{
+
+.navbar p {
   font-size: 30px;
   font-weight: 500;
 }
 
-.logo img{
+.logo img {
   width: 15vh;
   margin-top: 2vh;
 }
@@ -197,7 +235,7 @@ nav ul ul ul li{
   align-items: center;
 }
 
-.banner_gibson{
+.banner_gibson {
   display: flex;
   background-position: center left;
   background-size: cover;
@@ -210,7 +248,7 @@ nav ul ul ul li{
 
 .content {
   margin-top: 13vh;
-  margin-bottom:  10vh;
+  margin-bottom: 10vh;
 }
 
 .Acercade {
@@ -232,4 +270,28 @@ nav ul ul ul li{
 
 .Categorias img {
   max-width: 50vh;
+}
+
+.Guitarras section, .Acusticas section, 
+.Bajos section, .Amplificadores section {
+  display: flex;
+  justify-content: space-around;
+  margin-left: -25vh;
+  margin-right: -25vh;
+}
+
+.Texto_Guitarras p, .Texto_Bajos p,
+.Texto_Acusticas p, .Texto_Amplificadores p{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+.Imagenes_Guitarras img, .Imagenes_Bajos img,
+.Imagenes_Acusticas img, .Imagenes_Amplificadores img {
+  max-width: 30vh;
+  border: solid #1b1b1b;
+  margin-top: 15px;
 }
