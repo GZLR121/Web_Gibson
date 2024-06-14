@@ -14,6 +14,8 @@ body {
   width: 100%;
 }
 
+/* navbar */
+
 nav {
   background: #1b1b1b;
   position: fixed;
@@ -78,12 +80,12 @@ nav ul ul {
   border-top: 3px solid #d3bd41;
   opacity: 0;
   visibility: hidden;
-  transition: top .8s;
+  transition: all .6s ease;
 }
 
+
 .fa-solid:hover {
-  color: #e4c200f8;
-  transition: top .5s;
+  color: #e4c200f8;  
 }
 
 nav ul ul ul {
@@ -235,6 +237,8 @@ input {
   align-items: center;
 }
 
+/* fin navbar */
+
 .banner_gibson {
   display: flex;
   background-position: center left;
@@ -259,6 +263,13 @@ input {
 
 .Acercade img {
   max-width: 50vh;
+  transition: all .5s ease;
+}
+
+.Acercade img:hover {
+  max-width: 55vh;
+  box-shadow: #1b1b1b 5px 5px 10px;
+
 }
 
 .Categorias {
@@ -360,16 +371,16 @@ input {
 	padding: 10px;
 	margin-top: 10px;
 	text-decoration: none;
-	color: #1b1b1b;
-	border: 1px solid #1b1b1b;
+	color: azure;
+	border: 1px solid rgb(148, 132, 42);
 	border-radius: 4px;
 	transition: all 400ms ease;
 	margin-bottom: 5px;
+	background: #94842a;
 }
 .card .contenido-card a:hover{
-	background: #d3bd41;
-  border: 1px solid #94842a;
-	color: #fff;
+	background: #64591c;
+  border: 1px solid #64591c;
 }
 @media only screen and (min-width:320px) and (max-width:768px){
 	.container-card{
@@ -380,3 +391,58 @@ input {
 	}
 }
 /*Fin-Cards*/
+
+.Pie  {
+  margin-top: 10vh;
+  background-color: #1b1b1b;
+  color: azure;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: -10vh;
+}
+
+.Pie p {
+  font-size: small;
+  margin-top: 5px;
+}
+
+.redes-sociales i{
+  margin: 15px;
+  margin-top: 30px ;
+}
+
+/* articulo */
+
+.Articulo, .ArticuloExtras {
+  margin: 25vh;
+}
+
+.Articulo h1{
+  font-size: 7vh;
+  margin-bottom: 2vh;
+}
+
+.Articulo h1, .ArticuloExtras h2 {
+  text-align: center;
+}
+
+.ArticuloExtras {
+  margin-top: -20vh;
+}
+.Articulo img, .ArticuloExtras img, .ArticuloExtras video{
+  width: 100%;
+  object-fit: cover;
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+  border-radius: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.txtArticulo, .txtArticuloExtras {
+  margin-right : 10vh;
+  margin-left : 10vh;
+}
+
+
+/* fin articulo */
+
