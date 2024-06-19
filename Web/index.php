@@ -5,7 +5,7 @@ session_start();
 if (!isset($_SESSION['email'])) {
   echo '<script>
   alert("Debes iniciar sesion, Por favor.");
-  window.location = "/Web_Gibson/Web/LogIn&SingUp/index.php";
+  window.location = "LogIn&SingUp/index.php";
   </script>';
   session_destroy();
   die();
@@ -30,7 +30,7 @@ if (!isset($_SESSION['email'])) {
 
     <div class="full-content">
       <div id="nav" class="navbar">
-        <div class="logo"><a href="#Home"><img src="/Web_Gibson/Web/images/logo2.png" alt='logo' /></a></div>
+        <div class="logo"><a href="#Home"><img src="images/logo2.png" alt='logo' /></a></div>
         <ul>
           <li><a href="#Home">Home</a></li>
           <li>
@@ -48,9 +48,9 @@ if (!isset($_SESSION['email'])) {
                 <a href="#Guitarras">Guitarras <i class="fa-solid fa-caret-right"
                     style="color: #ffffff;"></i></span></a>
                 <ul>
-                  <li><a href="/Web_Gibson/Web/Paginas/Electricas/LesPaul.php">Les Paul</a></li>
-                  <li><a href="/Web_Gibson/Web/Paginas/Electricas/Explorer.php">Explorer</a></li>
-                  <li><a href="/Web_Gibson/Web/Paginas/Electricas/FlyingV.php">Flying V</a></li>
+                  <li><a href="Paginas/Electricas/LesPaul.php">Les Paul</a></li>
+                  <li><a href="Paginas/Electricas/Explorer.php">Explorer</a></li>
+                  <li><a href="Paginas/Electricas/FlyingV.php">Flying V</a></li>
                 </ul>
               </li>
               <li>
@@ -58,9 +58,9 @@ if (!isset($_SESSION['email'])) {
                 <a href="#Bajos">Bajos <i class="fa-solid fa-caret-right" style="color: #ffffff;"></i></span></a>
                 <input type="checkbox" id="btn-3">
                 <ul>
-                  <li><a href="/Web_Gibson/Web/Paginas/Bajos/Thunderbird.php">Thunderbird</a></li>
-                  <li><a href="/Web_Gibson/Web/Paginas/Bajos/EB-3.php">EB-3</a></li>
-                  <li><a href="/Web_Gibson/Web/Paginas/Bajos/Ripper.php">Ripper</a></li>
+                  <li><a href="Paginas/Bajos/Thunderbird.php">Thunderbird</a></li>
+                  <li><a href="Paginas/Bajos/EB-3.php">EB-3</a></li>
+                  <li><a href="Paginas/Bajos/Ripper.php">Ripper</a></li>
                 </ul>
               </li>
               <li>
@@ -68,9 +68,9 @@ if (!isset($_SESSION['email'])) {
                 <a href="#Acusticas">Acustica <i class="fa-solid fa-caret-right" style="color: #ffffff;"></i></span></a>
                 <input type="checkbox" id="btn-3">
                 <ul>
-                  <li><a href="/Web_Gibson/Web/Paginas/Acusticas/J-45.php">J-45</a></li>
-                  <li><a href="/Web_Gibson/Web/Paginas/Acusticas/Hummingbird.php">Hummingbird</a></li>
-                  <li><a href="/Web_Gibson/Web/Paginas/Acusticas/LG-2.php">LG-2</a></li>
+                  <li><a href="Paginas/Acusticas/J-45.php">J-45</a></li>
+                  <li><a href="Paginas/Acusticas/Hummingbird.php">Hummingbird</a></li>
+                  <li><a href="Paginas/Acusticas/LG-2.php">LG-2</a></li>
                 </ul>
               </li>
               <li>
@@ -79,19 +79,19 @@ if (!isset($_SESSION['email'])) {
                     style="color: #ffffff;"></i></span></a>
                 <input type="checkbox" id="btn-3">
                 <ul>
-                  <li><a href="/Web_Gibson/Web/Paginas/Amplificadores/GA-40.php">GA-40</a></li>
-                  <li><a href="/Web_Gibson/Web/Paginas/Amplificadores/GA-8T.php">GA-8T</a></li>
-                  <li><a href="/Web_Gibson/Web/Paginas/Amplificadores/GA-20T.php">GA-20T</a></li>
+                  <li><a href="Paginas/Amplificadores/GA-40.php">GA-40</a></li>
+                  <li><a href="Paginas/Amplificadores/GA-8T.php">GA-8T</a></li>
+                  <li><a href="Paginas/Amplificadores/GA-20T.php">GA-20T</a></li>
                 </ul>
               </li>
             </ul>
           </li>
-          <li><a href="/Web_Gibson/Web/Paginas/Shop/index.php">Shop</a></li>
-          <li><a href="/Web_Gibson/Web/php/logout_user.php">Log Out</a></li>
+          <li><a href="Shop/index.php">Shop</a></li>
+          <li><a href="php/logout_user.php">Log Out</a></li>
         </ul>
   </nav>
   <div class="content">
-    <div class="banner_gibson" id="Home"><img src="/Web_Gibson/Web/images/Gibson_Big_Banner_Collection.jpg" alt="" />
+    <div class="banner_gibson" id="Home"><img src="images/Gibson_Big_Banner_Collection.jpg" alt="" />
     </div>
     <br>
     <div id="AcercaDe" class="Acercade">
@@ -104,11 +104,11 @@ if (!isset($_SESSION['email'])) {
       </p><br>
       <p>Mis guitarras han sido tocadas por leyendas como B.B. King, Eric Clapton, Jimmy Page, y Slash, y han sido
         utilizadas para crear algunos de los momentos más memorables de la historia de la música.</p><br>
-      <img src="/Web_Gibson/Web/images/jimmy-page-eric-clapton.jpg" alt="Jimmy Page & Eric Clapton" />
+      <img src="images/jimmy-page-eric-clapton.jpg" alt="Jimmy Page & Eric Clapton" />
       <br>
       <p>Pero no solo soy una marca de guitarras. Soy una comunidad de músicos, artistas y amantes de la música
         que comparten la pasión por el sonido y la creatividad.</p><br>
-      <img src="/Web_Gibson/Web/images/gibson-custom-shop.png" alt="Gibson Guitars" />
+      <img src="images/gibson-custom-shop.png" alt="Gibson Guitars" />
       <p>Ofrezco una amplia gama de guitarras para todos los niveles de experiencia, desde principiantes hasta
         profesionales.</p>
       <p>También tengo una amplia gama de accesorios, como amplificadores, pedales y estuches.</p>
@@ -140,7 +140,7 @@ if (!isset($_SESSION['email'])) {
             <p>La reina indiscutible del rock and roll, famosa por su sustain
               incomparable, versatilidad y sonido grueso y potente. Desde Jimmy Page hasta
               Slash, la Les Paul ha sido la guitarra predilecta de innumerables leyendas.</p>
-            <a href="/Web_Gibson/Web/Paginas/Electricas/LesPaul.php">Leer Más</a>
+            <a href="Paginas/Electricas/LesPaul.php">Leer Más</a>
           </div>
         </div>
         <div class="card">
@@ -153,7 +153,7 @@ if (!isset($_SESSION['email'])) {
             <p>Una guitarra con un aspecto futurista y un sonido único, perfecta
               para músicos que buscan destacarse. Su puente Tune-O-Matic y sus pastillas
               humbucker brindan una potencia y sustain excepcionales.</p>
-            <a href="/Web_Gibson/Web/Paginas/Electricas/Explorer.php">Leer Más</a>
+            <a href="Paginas/Electricas/Explorer.php">Leer Más</a>
           </div>
         </div>
         <div class="card">
@@ -167,7 +167,7 @@ if (!isset($_SESSION['email'])) {
             <p>Un ícono del rock and roll, la Flying V es conocida por su
               diseño audaz y su sonido agresivo. Perfecta para músicos de heavy metal
               y hard rock que buscan cortar la mezcla con un tono potente y definido.</p>
-            <a href="/Web_Gibson/Web/Paginas/Electricas/FlyingV.php">Leer Más</a>
+            <a href="Paginas/Electricas/FlyingV.php">Leer Más</a>
           </div>
         </div>
       </div>
@@ -193,7 +193,7 @@ if (!isset($_SESSION['email'])) {
               para cortar la mezcla y hacer temblar el escenario. Su cuerpo robusto y su
               mástil cómodo lo convierten en un instrumento ideal para largas sesiones de
               interpretación.</p>
-            <a href="/Web_Gibson/Web/Paginas/Bajos/Thunderbird.php">Leer Más</a>
+            <a href="Paginas/Bajos/Thunderbird.php">Leer Más</a>
           </div>
         </div>
         <div class="card">
@@ -206,7 +206,7 @@ if (!isset($_SESSION['email'])) {
               y articulado, perfecto para géneros como el blues, el rock y el metal.
               Su cuerpo liviano y cómodo lo convierte en una guitarra ideal para largas
               sesiones de interpretación.</p>
-            <a href="/Web_Gibson/Web/Paginas/Bajos/EB-3.php">Leer Más</a>
+            <a href="Paginas/Bajos/EB-3.php">Leer Más</a>
           </div>
         </div>
         <div class="card">
@@ -219,7 +219,7 @@ if (!isset($_SESSION['email'])) {
             <p>Un bajo versátil con un sonido único, perfecto para músicos
               que buscan experimentar. Su puente Tune-O-Matic y sus pastillas humbucker
               brindan una potencia y sustain excepcionales.</p>
-            <a href="/Web_Gibson/Web/Paginas/Bajos/Ripper.php">Leer Más</a>
+            <a href="Paginas/Bajos/Ripper.php">Leer Más</a>
           </div>
         </div>
       </div>
@@ -245,7 +245,7 @@ if (!isset($_SESSION['email'])) {
               Está hecha con materiales de primera calidad, incluyendo una tapa de abeto Sitka
               macizo, un fondo y aros de palisandro indio macizo, y un mástil de caoba de una
               pieza con diapasón de palisandro indio.</p>
-            <a href="/Web_Gibson/Web/Paginas/Acusticas/J-45.php">Leer Más</a>
+            <a href="Paginas/Acusticas/J-45.php">Leer Más</a>
           </div>
         </div>
         <div class="card">
@@ -261,7 +261,7 @@ if (!isset($_SESSION['email'])) {
               de primera calidad, incluyendo una tapa de abeto Sitka macizo, un fondo y aros de
               palisandro indio macizo, y un mástil de caoba de una pieza con diapasón de palisandro
               indio.</p>
-            <a href="/Web_Gibson/Web/Paginas/Acusticas/Hummingbird.php">Leer Más</a>
+            <a href="Paginas/Acusticas/Hummingbird.php">Leer Más</a>
           </div>
         </div>
         <div class="card">
@@ -275,7 +275,7 @@ if (!isset($_SESSION['email'])) {
               cálido y clásico. Está hecha con materiales de primera calidad, incluyendo una tapa
               de abeto Sitka macizo, un fondo y aros de arce macizo, y un mástil de caoba de una
               pieza con diapasón de arce.</p>
-            <a href="/Web_Gibson/Web/Paginas/Acusticas/LG-2.php">Leer Más</a>
+            <a href="Paginas/Acusticas/LG-2.php">Leer Más</a>
           </div>
         </div>
       </div>
@@ -301,7 +301,7 @@ if (!isset($_SESSION['email'])) {
             <h3>GA-40</h3>
             <p>Un renacimiento del clásico GA-19RVT, con 2x12", reverb, trémolo y ese tono Gibson cálido y detallado.
             </p>
-            <a href="/Web_Gibson/Web/Paginas/Amplificadores/GA-40.php">Leer Más</a>
+            <a href="Paginas/Amplificadores/GA-40.php">Leer Más</a>
           </div>
         </div>
         <div class="card">
@@ -314,7 +314,7 @@ if (!isset($_SESSION['email'])) {
             <h3>GA-8T</h3>
             <p>Un tesoro vintage de 1x8" de los años 60, perfecto para blues, country y rockabilly, con un circuito 5F1
               simple y efectivo y un altavoz Alnico original de 8".</p>
-            <a href="/Web_Gibson/Web/Paginas/Amplificadores/GA-8T.php">Leer Más</a>
+            <a href="Paginas/Amplificadores/GA-8T.php">Leer Más</a>
           </div>
         </div>
         <div class="card">
@@ -327,7 +327,7 @@ if (!isset($_SESSION['email'])) {
             <h3>GA-20T</h3>
             <p>Un combo compacto de 1x10" con overdrive incorporado, ideal para practicar y tocar en lugares pequeños,
               con un altavoz Jensen C-10N y un sonido versátil.</p>
-            <a href="/Web_Gibson/Web/Paginas/Amplificadores/GA-20T.php">Leer Más</a>
+            <a href="Paginas/Amplificadores/GA-20T.php">Leer Más</a>
           </div>
         </div>
       </div>

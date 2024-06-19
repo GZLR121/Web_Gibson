@@ -2,34 +2,10 @@
   "extends": [
     "development"
   ],
-  "hints": {
-    "no-inline-styles": "off",
-    "axe/text-alternatives": [
-      "default",
-      {
-        "image-alt": "off"
-      }
-    ],
-    "compat-api/css": [
-      "default",
-      {
-        "ignore": [
-          "user-select"
-        ]
-      }
-    ],
-    "axe/name-role-value": [
-      "default",
-      {
-        "link-name": "off"
-      }
-    ],
-    "axe/structure": [
-      "default",
-      {
-        "list": "off"
-      }
-    ],
-    "button-type": "off"
-  }
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not ios_saf <= 17.4",
+    "not safari <= 17.4"
+  ]
 }

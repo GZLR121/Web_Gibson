@@ -15,12 +15,12 @@
     if($ejecutar){
         echo '<script>        
         alert("Compra realizada con exito");
-        window.location = "/Web_Gibson/Web/Paginas/Shop/index.php";
+        window.location = "../Shop/index.php";
         </script>';
     } else {
         echo '<script>        
         alert("Intente nuevamente, Compra no realizada");
-        window.location = "/Web_Gibson/Web/Paginas/Shop/HummingbirdShop.php";
+        window.location = "../Shop/HummingbirdShop.php";
         </script>';
     }
 

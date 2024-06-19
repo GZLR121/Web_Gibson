@@ -15,7 +15,7 @@
     if(mysqli_num_rows($verificar_email) > 0){
         echo '<script>        
         alert("El correo ya se encuentra registrado");
-        window.location = "/Web_Gibson/Web/LogIn&SingUp/index.php";
+        window.location = "../LogIn&SingUp/index.php";
         </script>';
         exit();
     }
@@ -26,7 +26,7 @@
     if(mysqli_num_rows($verificar_email) > 0){
         echo '<script>        
         alert("Este username ya se encuentra registrado");
-        window.location = "/Web_Gibson/Web/LogIn&SingUp/index.php";
+        window.location = "../LogIn&SingUp/index.php";
         </script>';
         exit();
     }
@@ -36,12 +36,12 @@
     if($ejecutar){
         echo '<script>        
         alert("Registro realizado con exito");
-        window.location = "/Web_Gibson/Web/LogIn&SingUp/index.php";
+        window.location = "../LogIn&SingUp/index.php";
         </script>';
     } else {
         echo '<script>        
         alert("Intente nuevamente, usuario no registrado");
-        window.location = "/Web_Gibson/Web/LogIn&SingUp/index.php";
+        window.location = "../LogIn&SingUp/index.php";
         </script>';
     }
 

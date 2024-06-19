@@ -3,7 +3,7 @@
 session_start();
 
 if (isset($_SESSION['email'])) {
-  header("location:/Web_Gibson/Web/index.php");
+  header("location:../index.php");
 }
 
 ?>
@@ -23,71 +23,71 @@ if (isset($_SESSION['email'])) {
 
     <div class="full-content">
       <div id="nav" class="navbar">
-        <div class="logo"><a href="#Home"><img src="/Web_Gibson/Web/images/logo2.png" alt='logo' /></a></div>
+        <div class="logo"><a href="#Home"><img src="../images/logo2.png" alt='logo' /></a></div>
         <ul>
-          <li><a href="/Web_Gibson/Web/index.php#Home">Home</a></li>
+          <li><a href="../index.php#Home">Home</a></li>
           <li>
             <label for="btn-1" class="show">Features +</label>
-            <a href="/Web_Gibson/Web/index.php#AcercaDe">Acerca De</a>
+            <a href="../index.php#AcercaDe">Acerca De</a>
 
           </li>
           <li>
             <label for="btn-2" class="show">Categorias</label>
-            <a href="/Web_Gibson/Web/index.php#Categorias">Categorias</a>
+            <a href="../index.php#Categorias">Categorias</a>
             <input type="checkbox" id="btn-2">
             <ul>
               <li>
                 <label for="btn-3" class="show">Guitarras</label>
-                <a href="/Web_Gibson/Web/index.php#Guitarras">Guitarras <i class="fa-solid fa-caret-right"
+                <a href="../index.php#Guitarras">Guitarras <i class="fa-solid fa-caret-right"
                     style="color: #ffffff;"></i></span></a>
                 <ul>
-                  <li><a href="/Web_Gibson/Web/Paginas/Electricas/LesPaul.php">Les Paul</a></li>
-                  <li><a href="/Web_Gibson/Web/Paginas/Electricas/Explorer.php">Explorer</a></li>
-                  <li><a href="/Web_Gibson/Web/Paginas/Electricas/FlyingV.php">Flying V</a></li>
+                  <li><a href="../Paginas/Electricas/LesPaul.php">Les Paul</a></li>
+                  <li><a href="../Paginas/Electricas/Explorer.php">Explorer</a></li>
+                  <li><a href="../Paginas/Electricas/FlyingV.php">Flying V</a></li>
                 </ul>
               </li>
               <li>
                 <label for="btn-3" class="show">Bajos</label>
-                <a href="/Web_Gibson/Web/index.php#Bajos">Bajos <i class="fa-solid fa-caret-right"
+                <a href="../index.php#Bajos">Bajos <i class="fa-solid fa-caret-right"
                     style="color: #ffffff;"></i></span></a>
                 <input type="checkbox" id="btn-3">
                 <ul>
-                  <li><a href="/Web_Gibson/Web/Paginas/Bajos/Thunderbird.php">Thunderbird</a></li>
-                  <li><a href="/Web_Gibson/Web/Paginas/Bajos/EB-3.php">EB-3</a></li>
-                  <li><a href="/Web_Gibson/Web/Paginas/Bajos/Ripper.php">Ripper</a></li>
+                  <li><a href="../Paginas/Bajos/Thunderbird.php">Thunderbird</a></li>
+                  <li><a href="../Paginas/Bajos/EB-3.php">EB-3</a></li>
+                  <li><a href="../Paginas/Bajos/Ripper.php">Ripper</a></li>
                 </ul>
               </li>
               <li>
                 <label for="btn-3" class="show">Acustica</label>
-                <a href="/Web_Gibson/Web/index.php#Acusticas">Acustica <i class="fa-solid fa-caret-right"
+                <a href="../index.php#Acusticas">Acustica <i class="fa-solid fa-caret-right"
                     style="color: #ffffff;"></i></span></a>
                 <input type="checkbox" id="btn-3">
                 <ul>
-                  <li><a href="/Web_Gibson/Web/Paginas/Acusticas/J-45.php">J-45</a></li>
-                  <li><a href="/Web_Gibson/Web/Paginas/Acusticas/Hummingbird.php">Hummingbird</a></li>
-                  <li><a href="/Web_Gibson/Web/Paginas/Acusticas/LG-2.php">LG-2</a></li>
+                  <li><a href="../Paginas/Acusticas/J-45.php">J-45</a></li>
+                  <li><a href="../Paginas/Acusticas/Hummingbird.php">Hummingbird</a></li>
+                  <li><a href="../Paginas/Acusticas/LG-2.php">LG-2</a></li>
                 </ul>
               </li>
               <li>
                 <label for="btn-3" class="show">Amplificadores</label>
-                <a href="/Web_Gibson/Web/index.php#Amplificadores">Amplis <i class="fa-solid fa-caret-right"
+                <a href="../index.php#Amplificadores">Amplis <i class="fa-solid fa-caret-right"
                     style="color: #ffffff;"></i></span></a>
                 <input type="checkbox" id="btn-3">
                 <ul>
                   <li><a href="php/Amplificadores/GA-40.php">GA-40</a></li>
-                  <li><a href="/Web_Gibson/Web/Paginas/Amplificadores/GA-8T.php">GA-8T</a></li>
-                  <li><a href="/Web_Gibson/Web/Paginas/Amplificadores/GA-20T.php">GA-20T</a></li>
+                  <li><a href="../Paginas/Amplificadores/GA-8T.php">GA-8T</a></li>
+                  <li><a href="../Paginas/Amplificadores/GA-20T.php">GA-20T</a></li>
                 </ul>
               </li>
             </ul>
           </li>
-          <li><a href="/Web_Gibson/Web/Paginas/Shop/index.php">Shop</a></li>
+          <li><a href="../Paginas/Shop/index.php">Shop</a></li>
         </ul>
   </nav>
   <div class="container" id="container">
     <div class="form-container sign-up">
 
-      <form class="m-5" id="formularioRegistro" action="/Web_Gibson/Web/php/registro_user.php" method="POST">
+      <form class="m-5" id="formularioRegistro" action="../php/registro_user.php" method="POST">
         <h1>Crear Cuenta</h1>
 
         <input type="text" id="nombreRegistro" name="nombreRegistro" aria-describedby="nombreRegistro"
@@ -102,7 +102,7 @@ if (isset($_SESSION['email'])) {
 
     </div>
     <div class="form-container sign-in">
-      <form class="m-5" id="formularioInicio" action="/Web_Gibson/Web/php/login_user.php" method="POST">
+      <form class="m-5" id="formularioInicio" action="../php/login_user.php" method="POST">
         <h1>Iniciar Sesion</h1>
 
         <input type="email" id="emailInicio" name="emailInicio" aria-describedby="emailInicio" placeholder="Email">

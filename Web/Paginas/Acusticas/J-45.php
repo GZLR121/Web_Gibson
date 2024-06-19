@@ -5,7 +5,7 @@ session_start();
 if (!isset($_SESSION['email'])) {
   echo '<script>
   alert("Debes iniciar sesion, Por favor.");
-  window.location = "/Web_Gibson/Web/LogIn&SingUp/index.php";
+  window.location = "../../LogIn&SingUp/index.php";
   </script>';
   session_destroy();
   die();
@@ -18,7 +18,7 @@ if (!isset($_SESSION['email'])) {
 <head>
   <meta charset="utf-8">
   <title>Gibson</title>
-  <link rel="stylesheet" href="/Web_Gibson/Web/style.css">
+  <link rel="stylesheet" href="../../style.css">
   <script src="https://kit.fontawesome.com/a3012a57e9.js" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.1/css/all.css">
@@ -26,72 +26,73 @@ if (!isset($_SESSION['email'])) {
 </head>
 
 <body>
-  <nav>
+<nav>
 
-    <div class="full-content">
-      <div id="nav" class="navbar">
-        <div class="logo"><a href="/Web_Gibson/Web/index.php#Home"><img src="/Web_Gibson/Web/images/logo2.png" alt='logo' /></a></div>
+<div class="full-content">
+    <div id="nav" class="navbar">
+        <div class="logo"><a href="../../index.php#Home"><img src="../../images/logo2.png"
+                    alt='logo' /></a></div>
         <ul>
-          <li><a href="/Web_Gibson/Web/index.php#Home">Home</a></li>
-          <li>
-            <label for="btn-1" class="show">Features +</label>
-            <a href="/Web_Gibson/Web/index.php#AcercaDe">Acerca De</a>
+            <li><a href="../../index.php#Home">Home</a></li>
+            <li>
+                <label for="btn-1" class="show">Features +</label>
+                <a href="../../index.php#AcercaDe">Acerca De</a>
 
-          </li>
-          <li>
-            <label for="btn-2" class="show">Categorias</label>
-            <a href="/Web_Gibson/Web/index.php#Categorias">Categorias</a>
-            <input type="checkbox" id="btn-2">
-            <ul>
-              <li>
-                <label for="btn-3" class="show">Guitarras</label>
-                <a href="/Web_Gibson/Web/index.php#Guitarras">Guitarras <i class="fa-solid fa-caret-right"
-                    style="color: #ffffff;"></i></span></a>
+            </li>
+            <li>
+                <label for="btn-2" class="show">Categorias</label>
+                <a href="../../index.php#Categorias">Categorias</a>
+                <input type="checkbox" id="btn-2">
                 <ul>
-                  <li><a href="/Web_Gibson/Web/Paginas/Electricas/LesPaul.php">Les Paul</a></li>
-                  <li><a href="/Web_Gibson/Web/Paginas/Electricas/Explorer.php">Explorer</a></li>
-                  <li><a href="/Web_Gibson/Web/Paginas/Electricas/FlyingV.php">Flying V</a></li>
+                    <li>
+                        <label for="btn-3" class="show">Guitarras</label>
+                        <a href="../../index.php#Guitarras">Guitarras <i
+                                class="fa-solid fa-caret-right" style="color: #ffffff;"></i></span></a>
+                        <ul>
+                            <li><a href="../../Paginas/Electricas/LesPaul.php">Les Paul</a></li>
+                            <li><a href="../../Paginas/Electricas/Explorer.php">Explorer</a></li>
+                            <li><a href="../../Paginas/Electricas/FlyingV.php">Flying V</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="btn-3" class="show">Bajos</label>
+                        <a href="#Bajos">Bajos <i class="fa-solid fa-caret-right"
+                                style="color: #ffffff;"></i></span></a>
+                        <input type="checkbox" id="btn-3">
+                        <ul>
+                            <li><a href="../../Paginas/Bajos/Thunderbird.php">Thunderbird</a></li>
+                            <li><a href="../../Paginas/Bajos/EB-3.php">EB-3</a></li>
+                            <li><a href="../../Paginas/Bajos/Ripper.php">Ripper</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="btn-3" class="show">Acustica</label>
+                        <a href="#Acusticas">Acustica <i class="fa-solid fa-caret-right"
+                                style="color: #ffffff;"></i></span></a>
+                        <input type="checkbox" id="btn-3">
+                        <ul>
+                            <li><a href="../../Paginas/Acusticas/J-45.php">J-45</a></li>
+                            <li><a href="../../Paginas/Acusticas/Hummingbird.php">Hummingbird</a></li>
+                            <li><a href="../../Paginas/Acusticas/LG-2.php">LG-2</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="btn-3" class="show">Amplificadores</label>
+                        <a href="#Amplificadores">Amplis <i class="fa-solid fa-caret-right"
+                                style="color: #ffffff;"></i></span></a>
+                        <input type="checkbox" id="btn-3">
+                        <ul>
+                            <li><a href="../../Paginas/Amplificadores/GA-40.php">GA-40</a></li>
+                            <li><a href="../../Paginas/Amplificadores/GA-8T.php">GA-8T</a></li>
+                            <li><a href="../../Paginas/Amplificadores/GA-20T.php">GA-20T</a></li>
+                        </ul>
+                    </li>
                 </ul>
-              </li>
-              <li>
-                <label for="btn-3" class="show">Bajos</label>
-                <a href="/Web_Gibson/Web/index.php#Bajos">Bajos <i class="fa-solid fa-caret-right"
-                    style="color: #ffffff;"></i></span></a>
-                <input type="checkbox" id="btn-3">
-                <ul>
-                  <li><a href="/Web_Gibson/Web/Paginas/Bajos/Thunderbird.php">Thunderbird</a></li>
-                  <li><a href="/Web_Gibson/Web/Paginas/Bajos/EB-3.php">EB-3</a></li>
-                  <li><a href="/Web_Gibson/Web/Paginas/Bajos/Ripper.php">Ripper</a></li>
-                </ul>
-              </li>
-              <li>
-                <label for="btn-3" class="show">Acustica</label>
-                <a href="/Web_Gibson/Web/index.php#Acusticas">Acustica <i class="fa-solid fa-caret-right"
-                    style="color: #ffffff;"></i></span></a>
-                <input type="checkbox" id="btn-3">
-                <ul>
-                  <li><a href="/Web_Gibson/Web/Paginas/Acusticas/J-45.php">J-45</a></li>
-                  <li><a href="/Web_Gibson/Web/Paginas/Acusticas/Hummingbird.php">Hummingbird</a></li>
-                  <li><a href="/Web_Gibson/Web/Paginas/Acusticas/LG-2.php">LG-2</a></li>
-                </ul>
-              </li>
-              <li>
-                <label for="btn-3" class="show">Amplificadores</label>
-                <a href="/Web_Gibson/Web/index.php#Amplificadores">Amplis <i class="fa-solid fa-caret-right"
-                    style="color: #ffffff;"></i></span></a>
-                <input type="checkbox" id="btn-3">
-                <ul>
-                  <li><a href="/Web_Gibson/Web/Paginas/Amplificadores/GA-40.php">GA-40</a></li>
-                  <li><a href="/Web_Gibson/Web/Paginas/Amplificadores/GA-8T.php">GA-8T</a></li>
-                  <li><a href="/Web_Gibson/Web/Paginas/Amplificadores/GA-20T.php">GA-20T</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li><a href="/Web_Gibson/Web/Paginas/Shop/index.php">Shop</a></li>
-          <li><a href="/Web_Gibson/Web/php/logout_user.php">Log Out</a></li>
+            </li>
+            <li><a href="../../Shop/index.php">Shop</a></li>
+            <li><a href="../../php/logout_user.php">Log Out</a></li>
         </ul>
-  </nav>
+</nav>
   </div>
   <div class="content">
     <section class="Articulo">
@@ -139,7 +140,7 @@ if (!isset($_SESSION['email'])) {
           amplia gama de géneros musicales, incluyendo folk, blues, country, rock, y bluegrass.</p><br>
 
         <video controls>
-          <source src="/Web_Gibson/Web/videos/J 45 Standard Acoustic Guitar.mp4" type="video/mp4">
+          <source src="../videos/J 45 Standard Acoustic Guitar.mp4" type="video/mp4">
         </video>
       </div>
     </section>

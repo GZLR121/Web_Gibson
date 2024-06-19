@@ -426,12 +426,14 @@ nav input {
     transition: .5s ease;
     user-select: none;
 	margin-top: 25vh;
+	left: 5vh;
 }
 
 .btn-left:hover,
 .btn-right:hover {
     color: #b99e00f8;
 }
+
 
 .btn-left {
     left: 8vh;
