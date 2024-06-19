@@ -21,7 +21,7 @@ if (!isset($_SESSION['email'])) {
   <link rel="stylesheet" href="/Web_Gibson/Web/style.css">
   <script src="https://kit.fontawesome.com/a3012a57e9.js" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <link rel="stylesheet" href="file:///E:/fontawesome/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.1/css/all.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 

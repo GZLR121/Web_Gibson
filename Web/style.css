@@ -19,6 +19,21 @@ img, video, a {
   user-select: none;
 }
 
+.content h2 {
+  animation: mover-izq-der 2s infinite;
+}
+
+@keyframes mover-izq-der {
+  from {
+    transform: translateX(-100px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+
+
 /* navbar */
 
 nav {
