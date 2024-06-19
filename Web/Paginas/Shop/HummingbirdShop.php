@@ -172,11 +172,11 @@ if (!isset($_SESSION['email'])) {
 
 			<div class="container-description">
 				<div class="title-description">
-					<h4>Audio</h4>
+					<h4>Sonido</h4>
 				</div>
 				<div class="text-description">
 					<audio controls>
-						<source src="/Web_Gibson/Web/Paginas/Shop/Audios/Promises.m4a" type="audio/mpeg">
+						<source src="/Web_Gibson/Web/Paginas/Shop/Audios/g bird.m4a" type="audio/mpeg">
 						Tu navegador no soporta la etiqueta de audio.
 					</audio>
 
