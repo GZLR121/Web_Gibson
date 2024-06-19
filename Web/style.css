@@ -19,18 +19,50 @@ img, video, a {
   user-select: none;
 }
 
-.content h2 {
-  animation: mover-izq-der 2s infinite;
+.welcome h1 {
+  animation: mover-izq-der 3s 1;
+  font-size: 10vh;
+  text-align: center;
+}
+
+.welcome p {
+  animation: mover-izq-der 4s 1;
+  font-size: 3vh;
+  text-align: center;
+}
+
+.welcome button {
+  animation: mover-izq-der 5s 1;
+  display: inline-block;
+	padding: 10px;
+	margin-top: 3vh;
+	text-decoration: none;
+	color: azure;
+	border: 1px solid rgb(148, 132, 42);
+	border-radius: 8px;
+	transition: all 0.4s ease;
+	margin-bottom: 5px;
+	background: #94842a;
+  margin-left: 60vh;
+}
+.welcome button:hover{
+	background: #64591c;
+  border: 1px solid #64591c;
 }
 
 @keyframes mover-izq-der {
   from {
-    transform: translateX(-100px);
+    transform: translateX(-165vh);
   }
 
   to {
     transform: translateX(0px);
   }
+}
+
+.welcome {
+
+  margin: 35vh;
 }
 
 
